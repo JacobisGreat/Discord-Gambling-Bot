@@ -1,35 +1,33 @@
-# Crypto Discord Bot 🎲💰
+# Crypto Discord Bot 
 
-A feature-rich Discord bot for cryptocurrency-based gambling and wallet management. This bot allows users to deposit crypto, play games like coinflip, tip other users, and manage their balances within Discord servers.
+## Features 
 
-## Features 🌟
-
-### 🎯 Gambling Games
+### Gambling Games
 - **Coinflip**: Bet on heads or tails with other users or against the bot
 - **Leaderboard**: Track top players and their winnings
 
-### 💎 Cryptocurrency Support
+### Cryptocurrency Support
 - **Multi-currency**: Supports Bitcoin (BTC), Litecoin (LTC), and Tether (USDT@TRX)
 - **Real-time pricing**: Live USD conversion using CoinGecko API
 - **Automated deposits**: Webhook-based deposit tracking with confirmations
 
-### 💸 Wallet Management
+### Wallet Management
 - **Balance tracking**: Individual user balance management
 - **Deposits**: Generate unique wallet addresses for deposits
 - **Withdrawals**: Send crypto to external wallets
 - **Tipping**: Send funds between Discord users
 
-### 🛠️ Admin Features
+### Admin Features
 - **Balance management**: Admins can set user balances
 - **Transaction monitoring**: Real-time deposit and withdrawal tracking
 - **Support tickets**: Built-in ticket system for user support
 
-### ⚡ Performance Optimizations
+### Performance Optimizations
 - **Caching system**: Optimized data loading with TTL caching
 - **Async operations**: Non-blocking I/O for better performance
 - **Rate limiting**: Price API caching to prevent rate limits
 
-## Installation 🚀
+## Installation 
 
 ### Prerequisites
 - Python 3.8+
@@ -69,7 +67,7 @@ Create the following JSON files in the root directory:
 python bot.py
 ```
 
-## Usage 📖
+## Usage 
 
 ### Basic Commands
 
@@ -78,7 +76,7 @@ python bot.py
 - `!deposit` - Generate a deposit address
 - `!withdraw <amount> <currency> <address>` - Withdraw funds
 
-#### Gaming
+#### Gmaes
 - `/coinflip <amount> <side>` - Start a coinflip game
   - Choose heads or tails
   - Other users can join or you can call the bot
@@ -100,39 +98,7 @@ python bot.py
 4. **Compete**: Other users can join your game or you can play against the bot
 5. **Win/Lose**: Winnings are automatically added to your balance
 
-## Project Structure 📁
-
-```
-├── bot.py                 # Main bot file with core functionality
-├── cogs/                  # Bot command modules
-│   ├── balance.py        # Balance checking commands
-│   ├── coinflip.py       # Coinflip game logic
-│   ├── deposit.py        # Deposit address generation
-│   ├── deposits.py       # Deposit tracking
-│   ├── leaderboard.py    # Player rankings
-│   ├── ping.py           # Basic ping command
-│   ├── setbal.py         # Admin balance management
-│   ├── ticket.py         # Support ticket system
-│   ├── tip.py            # User tipping system
-│   ├── withdraw.py       # Withdrawal processing
-│   └── withdraws.py      # Withdrawal tracking
-├── requirements.txt       # Python dependencies
-├── balances.json         # User balance storage
-├── wallets.json          # Wallet address mappings
-├── deposits.json         # Deposit transaction records
-├── withdrawals.json      # Withdrawal transaction records
-├── gameNumber.json       # Game numbering system
-└── ticket_status.json    # Support ticket statuses
-```
-
 ## Technical Details ⚙️
-
-### Architecture
-- **Discord.py**: Modern async Discord API wrapper
-- **Flask**: Webhook server for crypto callbacks
-- **ngrok**: Tunnel for webhook accessibility
-- **aiofiles**: Async file I/O operations
-- **CoinGecko API**: Real-time cryptocurrency pricing
 
 ### Data Storage
 - JSON-based file storage for simplicity
@@ -145,13 +111,8 @@ python bot.py
 - Admin-only commands with permission checks
 - Error handling and logging throughout
 
-### Performance Optimizations
-- LRU cache for price data (60-second TTL)
-- Async operations for all I/O
-- Optimized callback handling
-- Reduced file I/O with caching
 
-## Contributing 🤝
+## Contributing 
 
 1. Fork the repository
 2. Create a feature branch
@@ -159,13 +120,9 @@ python bot.py
 4. Add tests if applicable
 5. Submit a pull request
 
-## License 📝
+## License 
 
 This project is provided as-is for educational purposes. Please ensure compliance with local laws regarding cryptocurrency and gambling applications.
-
-## Support 💬
-
-For support, open a ticket using the bot's built-in ticket system or create an issue in this repository.
 
 ## Disclaimer ⚠️
 
