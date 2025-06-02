@@ -1,5 +1,5 @@
 # Crypto Discord Bot 
-- **please leave a star if you want more updates, update requests can be sent to @highnotes on discord**
+- **please leave a star if you want more updates, for assistance/feature requests message @highnotes on discord**
 ## Features 
 
 ### Gambling Games
