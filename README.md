@@ -49,8 +49,13 @@ pip install -r requirements.txt
 ### 3. Environment Setup
 Create a `.env` file in the root directory:
 ```env
-DISCORD_TOKEN=your_discord_bot_token
-# Add other necessary API keys and configuration
+DISCORD_TOKEN=
+withdrawl=[channel id]
+account=apr-xxxxxxx (get from apirone)
+transfer_key=also get from apirone
+admin_channel_id=[channel id]
+DEPOSIT_CHANNEL_ID=[channel id]
+
 ```
 
 ### 4. Initialize Data Files
